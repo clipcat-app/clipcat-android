@@ -1,0 +1,21 @@
+# Android build outputs
+.gradle/
+.kotlin/
+**/build/
+
+# Local machine configuration
+local.properties
+
+# Signing secrets
+keystore.properties
+secrets/
+*.jks
+*.keystore
+
+# IDE files
+.idea/
+*.iml
+
+# Misc
+*.log
+.DS_Store

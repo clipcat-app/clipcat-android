@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Clipcat" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary_aqua</item>
+        <item name="colorOnPrimary">@color/dark_text</item>
+        <item name="colorPrimaryContainer">#004D40</item>
+        <item name="colorOnPrimaryContainer">@color/dark_text</item>
+        <item name="colorSecondary">@color/secondary_pink</item>
+        <item name="colorOnSecondary">@color/dark_text</item>
+        <item name="colorSecondaryContainer">#880E4F</item>
+        <item name="colorOnSecondaryContainer">@color/dark_text</item>
+        
+        <item name="android:colorBackground">@color/dark_background</item>
+        <item name="colorSurface">@color/dark_surface</item>
+        <item name="colorOnBackground">@color/dark_text</item>
+        <item name="colorOnSurface">@color/dark_text</item>
+        
+        <item name="android:statusBarColor">@color/dark_background</item>
+        <item name="android:navigationBarColor">@color/dark_background</item>
+        <item name="android:windowBackground">@color/dark_background</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        
+        <item name="buttonStyle">@style/Widget.Clipcat.Button</item>
+        <item name="switchStyle">@style/Widget.Clipcat.Switch</item>
+    </style>
+
+    <style name="Widget.Clipcat.Button" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/dark_surface</item>
+        <item name="strokeColor">@color/dark_text</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="android:textColor">@color/dark_text</item>
+        <item name="cornerRadius">24dp</item>
+        <item name="android:fontFamily">sans-serif-condensed-medium</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:letterSpacing">0.1</item>
+    </style>
+
+    <!-- Specific button style for the main capture button -->
+    <style name="Widget.Clipcat.Button.Capture" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/black</item>
+        <item name="strokeColor">@color/white</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="android:textColor">@color/dark_surface</item>
+        <item name="cornerRadius">40dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="iconPadding">0dp</item>
+        <item name="android:fontFamily">sans-serif-condensed-medium</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:letterSpacing">0.1</item>
+    </style>
+
+    <!-- Icon button (round) -->
+    <style name="Widget.Clipcat.Button.Icon" parent="Widget.Material3.Button.IconButton">
+        <item name="backgroundTint">@color/dark_surface</item>
+        <item name="strokeColor">@color/dark_text</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="iconTint">@color/dark_text</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetRight">0dp</item>
+    </style>
+
+    <style name="Widget.Clipcat.Switch" parent="Widget.Material3.CompoundButton.Switch">
+        <item name="trackTint">@color/switch_track_tint</item>
+        <item name="thumbTint">@color/switch_thumb_tint</item>
+    </style>
+</resources>

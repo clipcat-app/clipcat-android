@@ -1,0 +1,21 @@
+<resources>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    
+    <color name="camera_surround">#FFFFFF</color>
+    <color name="preview_border">#000000</color>
+
+    <!-- Light Theme Colors -->
+    <color name="light_background">#F5F7FA</color>
+    <color name="light_surface">#FFFFFF</color>
+    <color name="light_text">#1A2B3C</color>
+    
+    <!-- Dark Theme Colors -->
+    <color name="dark_background">#070707</color>
+    <color name="dark_surface">#121212</color>
+    <color name="dark_text">#FFFFFF</color>
+    
+    <!-- Common Colors -->
+    <color name="primary_aqua">#00BCD4</color>
+    <color name="secondary_pink">#E91E63</color>
+</resources>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="false">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorSurface"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Settings"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="IMAGE QUALITY"
+                android:textAllCaps="true"
+                android:textColor="?attr/colorOnSurface"
+                android:textSize="12sp"
+                android:layout_marginBottom="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:spacing="8dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/qualityLowButton"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="4dp"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:text="Low"
+                    android:textAllCaps="false"
+                    android:textSize="12sp"
+                    android:textColor="?attr/colorOnSurface"
+                    app:backgroundTint="?attr/colorSurface"
+                    app:cornerRadius="20dp"
+                    app:strokeColor="?attr/colorOnSurface"
+                    app:strokeWidth="1.6dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/qualityMediumButton"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="4dp"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:text="Medium"
+                    android:textAllCaps="false"
+                    android:textSize="12sp"
+                    android:textColor="?attr/colorOnSurface"
+                    app:backgroundTint="?attr/colorSurface"
+                    app:cornerRadius="20dp"
+                    app:strokeColor="?attr/colorOnSurface"
+                    app:strokeWidth="1.6dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/qualityHighButton"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="4dp"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:text="High"
+                    android:textAllCaps="false"
+                    android:textSize="12sp"
+                    android:textColor="?attr/colorOnSurface"
+                    app:backgroundTint="?attr/colorSurface"
+                    app:cornerRadius="20dp"
+                    app:strokeColor="?attr/colorOnSurface"
+                    app:strokeWidth="1.6dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?attr/colorOutline"
+            android:layout_marginBottom="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="IMAGE FORMAT"
+                android:textAllCaps="true"
+                android:textColor="?attr/colorOnSurface"
+                android:textSize="12sp"
+                android:layout_marginBottom="8dp" />
+
+            <RadioGroup
+                android:id="@+id/imageFormatGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="2dp">
+
+                <RadioButton
+                    android:id="@+id/formatJpegRadio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="JPEG (Smaller)"
+                    android:textColor="?attr/colorOnSurface"
+                    android:textSize="12sp"
+                    android:buttonTint="?attr/colorOnSurface"
+                    android:layout_marginEnd="18dp" />
+
+                <RadioButton
+                    android:id="@+id/formatPngRadio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PNG (Lossless)"
+                    android:textColor="?attr/colorOnSurface"
+                    android:textSize="12sp"
+                    android:buttonTint="?attr/colorOnSurface" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?attr/colorOutline"
+            android:layout_marginBottom="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="THEME MODE"
+                android:textAllCaps="true"
+                android:textColor="?attr/colorOnSurface"
+                android:textSize="12sp"
+                android:layout_marginBottom="8dp" />
+
+            <RadioGroup
+                android:id="@+id/themeModeGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="2dp">
+
+                <RadioButton
+                    android:id="@+id/themeSystemRadio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="System"
+                    android:textColor="?attr/colorOnSurface"
+                    android:textSize="12sp"
+                    android:buttonTint="?attr/colorPrimary"
+                    android:layout_marginEnd="18dp" />
+
+                <RadioButton
+                    android:id="@+id/themeLightRadio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Light"
+                    android:textColor="?attr/colorOnSurface"
+                    android:textSize="12sp"
+                    android:buttonTint="?attr/colorPrimary"
+                    android:layout_marginEnd="18dp" />
+
+                <RadioButton
+                    android:id="@+id/themeDarkRadio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dark"
+                    android:textColor="?attr/colorOnSurface"
+                    android:textSize="12sp"
+                    android:buttonTint="?attr/colorPrimary" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?attr/colorOutline"
+            android:layout_marginBottom="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:letterSpacing="0.05"
+                android:text="HAPTIC FEEDBACK"
+                android:textAllCaps="true"
+                android:textColor="?attr/colorOnSurface"
+                android:textSize="12sp" />
+
+            <Switch
+                android:id="@+id/hapticFeedbackSwitchDialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:thumbTint="?attr/colorPrimary"
+                android:trackTint="?attr/colorPrimary" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
